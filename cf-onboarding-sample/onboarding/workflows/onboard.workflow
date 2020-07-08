@@ -115,7 +115,7 @@
 			"priority": "MEDIUM",
 			"isHiddenInLogForParticipant": false,
 			"userInterface": "sapui5://comsapcloudworkflowsamplesonboardequip/com.sap.cloud.workflow.samples.onboardequip",
-			"recipientUsers": "${context.empData.buddies}, ${context.buddyId}",
+			"recipientUsers": "${context.empData.buddies}, ${context.buddyId}, ${info.startedBy}",
 			"id": "usertask1",
 			"name": "Change or Confirm Equipment",
 			"documentation": "The buddy identifies the list of equipments which the new hire would need, considering the available inventory and profile of the new hire. "
@@ -127,7 +127,7 @@
 			"priority": "MEDIUM",
 			"isHiddenInLogForParticipant": false,
 			"userInterface": "sapui5://comsapcloudworkflowsamplesonboardapprove/com.sap.cloud.workflow.samples.onboardapprove",
-			"recipientUsers": "${context.managerId}",
+			"recipientUsers": "${context.managerId}, ${info.startedBy}",
 			"id": "usertask2",
 			"name": "Approve Equipment",
 			"documentation": "The manager approves the equipment list proposed by the buddy"
